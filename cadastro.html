@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title> Formação DEV-Cadastro</title>
+</head>
+<body>
+<header>
+<h1>Inscrição de Cursos</h1>
+<p>Nesta tela vo^cê poderá se cadastrar nos cursos disponíveis no sistema</p>
+<p>Iremos cadastrar seus dados pessoais nas nossas bases de aluno</p>
+</header>
+<main>
+    <h2>Instruções de cadastro</h2>
+    <p>Atenção: Os campos com * são Obrigatórios<br>
+        Ao final do cadastro, você receberá uma confirmação com o resumo dos seus dados e o curso escolhido.</p>
+        <h2>Formulário de inscrição</h2>
+        <form id="frmCadastro">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+<label for="nome" id="lblNome">* Nome completo</label>
+<input type="text" id="nome" maxlength="40" size="40" placeholder="Informe seu nome completo"  required>
+<br>
+<label for="cpf" id="lblCpf">* CPF</label>
+<input type="tel" id="cpf" maxlength="11" size="11" placeholder="Digite somente numeros ___________" required>
+<br>
+<label for="rg" id="lblRg">RG</label>
+    <input type="text" id="rg" maxlength="12" size="12" placeholder="digite seu rg aqui">
+<br>
+<label id="lblSexo">Sexo</label>
+<br>
+<label for="feminino">feminino</label>
+<input type="radio"name="sexo" id="feminino" value="feminino">
+<br>
+<label for="masculino">Masculino</label>
+<input type="radio" name="sexo" id="masculino" value="masculino">
+            </fieldset>
+            <fieldset>
+                <legend>Endereço e dados de Contatos</legend>
+<br>
+<label for="cep" id="lblCep">*CEP
+    <input type="tel" id="cep" maxlength="8" size="8" placeholder="Digite o cep sem pontuações" required>
+    <br>
+    <label for="rua" id="lblRua">* Rua/Avenida</label>
+    <input type="text" id="rua" maxlength="70" size="70" required>
+    <br>
+    <label for="numero" id="lblNumero">* numero</label>
+    <input type="tel" id="numero" maxlength="6" size="6" placeholder="Informe o numero dacasa ou apartamento" required>
+    <br>
+    <label for="complemento" id="lblComplemento">Complemento<label>
+        <input type="text" id="complemento" maxlength="30" size="30" placeholder="Informe seu complemento. casa 1 / apartamento 303 bloco C">
+        <br>
+        <label for="bairro" id="lblBairro">* Bairro</label>
+        <input type="text" id="bairro" maxlength="40" size="40" placeholder="Informe  seu bairro corretamente." required>
+        <br>
+        <label for="cidade" id="lblCidade">Cidade</label>
+        <input type="text" id="cidade" maxlength="20"
+ size="20" required>        <label for="estado" id="lblEstado">* Selecione seu estado</label>
+ <br>
+        
+<select id="estado">
+    <option  value = " AC " > Acre </option>
+    < option  value = " AL " > Alagoas </option>
+        <option  value = " AP " >Amapá</ option >
+    
+    <option  value = " AM " > Amazonas </option>
+
+    <option  value = " BA " > Bahia </option>
+
+    <option  value = " CE " > Ceará </option>
+
+    <option  value = " DF " > Distrito Federal </option>
+
+    <option  value = " ES " > Espírito Santo </option>
+
+    <option  value = " GO " > Goiás </option>
+
+    <option  value = " MA " > Maranhão </option>
+
+    <option  value = " MT " > Mato Grosso </option>
+
+    <option  value = " MS " > Mato Grosso do Sul </option>
+
+    <option  value = " MG " > Minas Gerais </option>
+
+    <option  value = " PA " > Pará </option>
+
+    <option  value = " PB " > Paraíba </option>
+
+    <option  value = " PR " > Paraná </option>
+
+    <option  value = " PE " > Pernambuco </option>
+
+    <option  value = " PI " > Piauí </option>
+
+    <option  value = " RJ " > Rio de Janeiro </option>
+
+    <option  value = " RN " > Rio Grande do Norte </option>
+
+    <option  value = " RS " > Rio Grande do Sul </option>
+
+    <option  value = " RO " > Rondônia </option>
+
+    <option  value = " RR " > Roraima </option>
+    <option  value = " SC " > Santa Catarina </option>
+    <option  value = " SP " > São Paulo </option>
+    <option  value = " SE " > Sergipe </option>
+    <option  value = " TO " > Tocantins </option>
+    <option  value = " EX " > Estrangeiro </option>
+</ select >
+<br>
+<label for="dddFixo" id=lbldddFixo">* Informe o DDD da sua região</label>   
+<input type="tel" id="dddFixo" maxlength="2" size="2" placeholder="Código de área. 11, 21, 24..." required>
+<br>
+<label for="telFixo" id="lblTelFixo">* Telefone residencial para contato</label>
+<input type="tel" id="telFixo" maxlength="8" size="8" required>
+<br>
+<label for=dddMovel" id="lblDddMovel">* Informe o DDD da sua região</label>
+<input type="tel" id="dddMovel" maxlength="2" size="2" placeholder="Código de área da região onde você mora" required>
+<br>
+<label for="cel" id="lblCel">* Celular</label>
+<input type="tel" id="cel" maxlength="9" size="9"  required>
+</fieldset>
+<fieldset>
+    <legend>Cursos</legend>
+<label for="cursos" id="lblCurso">* Selecione um curso</label>
+<select id="cursos">
+    <option value="">Selecione um curso</option></option>
+    <option value="HTML com JavaScript">HTML com JavaScript</option>
+<option value="Csharp">Csharp</option>
+<option value="Java">Java orientado a objeto</option>
+<option value="Python">Python</option>
+<option value="Cobol">Cobol</option>
+</select>
+</fieldset>
+<input type="submit" id="btnOk" onclick="CadastrarAluno();" value="cadastrar agora">
+        </form>
+        <div id="ResumoCadastro" style="display:none">
+<h2>Resumo do cadastro</h2>
+<p id="resumoGeral"></p>
+        </div>
+</main>
+<footer aria-label="rodapé">
+    <h3>Formação DEV Brasil</h3>
+<p>AV. Faria Lima 77 SP BR<br>
+TEL. 999-999999</p>
+ <p>&copy; - Formação DEV 1996-2021</p>
+ </footer>
+ </body>
+ </html>
+ 
