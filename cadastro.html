@@ -3,9 +3,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
 <title> Formação DEV-Cadastro</title>
+<link rel="stylesheet" href="CSS/style.css">
+<script src="JS/ValidarCadastro.js"></script>
+<link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
 <header>
@@ -17,7 +19,12 @@
     <h2>Instruções de cadastro</h2>
     <p>Atenção: Os campos com * são Obrigatórios<br>
         Ao final do cadastro, você receberá uma confirmação com o resumo dos seus dados e o curso escolhido.</p>
+        
+
+        
+
         <h2>Formulário de inscrição</h2>
+        <div id="frm">
         <form id="frmCadastro">
             <fieldset>
                 <legend>Dados pessoais</legend>
@@ -33,15 +40,16 @@
 <label id="lblSexo">Sexo</label>
 <br>
 <label for="feminino">feminino</label>
-<input type="radio"name="sexo" id="feminino" value="feminino">
+<input type="radio" name="sexo" id="feminino" value="feminino">
 <br>
 <label for="masculino">Masculino</label>
 <input type="radio" name="sexo" id="masculino" value="masculino">
             </fieldset>
+            <br>
             <fieldset>
                 <legend>Endereço e dados de Contatos</legend>
 <br>
-<label for="cep" id="lblCep">*CEP
+<label for="cep" id="lblCep">* CEP</label>
     <input type="tel" id="cep" maxlength="8" size="8" placeholder="Digite o cep sem pontuações" required>
     <br>
     <label for="rua" id="lblRua">* Rua/Avenida</label>
@@ -56,12 +64,13 @@
         <label for="bairro" id="lblBairro">* Bairro</label>
         <input type="text" id="bairro" maxlength="40" size="40" placeholder="Informe  seu bairro corretamente." required>
         <br>
-        <label for="cidade" id="lblCidade">Cidade</label>
+        <label for="cidade" id="lblCidade">* Cidade</label>
         <input type="text" id="cidade" maxlength="20"
  size="20" required>        <label for="estado" id="lblEstado">* Selecione seu estado</label>
  <br>
         
 <select id="estado">
+    <option value="">Selecione</option>
     <option  value = " AC " > Acre </option>
     < option  value = " AL " > Alagoas </option>
         <option  value = " AP " >Amapá</ option >
@@ -118,12 +127,13 @@
 <label for="telFixo" id="lblTelFixo">* Telefone residencial para contato</label>
 <input type="tel" id="telFixo" maxlength="8" size="8" required>
 <br>
-<label for=dddMovel" id="lblDddMovel">* Informe o DDD da sua região</label>
+<label for=dddMovel" id="lbldddMovel">* Informe o DDD da sua região</label>
 <input type="tel" id="dddMovel" maxlength="2" size="2" placeholder="Código de área da região onde você mora" required>
 <br>
 <label for="cel" id="lblCel">* Celular</label>
 <input type="tel" id="cel" maxlength="9" size="9"  required>
 </fieldset>
+
 <fieldset>
     <legend>Cursos</legend>
 <label for="cursos" id="lblCurso">* Selecione um curso</label>
@@ -136,19 +146,21 @@
 <option value="Cobol">Cobol</option>
 </select>
 </fieldset>
-<input type="submit" id="btnOk" onclick="CadastrarAluno();" value="cadastrar agora">
-        </form>
-        <div id="ResumoCadastro" style="display:none">
-<h2>Resumo do cadastro</h2>
-<p id="resumoGeral"></p>
+</form>
+<button class="btnOk" onclick="CadastrarAluno();">Cadastrar agora</button>
+        
         </div>
+        
+         <span id="display"></span>
 </main>
+
 <footer aria-label="rodapé">
     <h3>Formação DEV Brasil</h3>
 <p>AV. Faria Lima 77 SP BR<br>
 TEL. 999-999999</p>
  <p>&copy; - Formação DEV 1996-2021</p>
  </footer>
+
  </body>
  </html>
  

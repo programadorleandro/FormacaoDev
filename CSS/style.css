@@ -1,0 +1,75 @@
+.erros {
+color: red;
+}
+
+
+body {
+  font: 1em sans-serif;
+  background-color: #ffd;
+  width: 700;
+  margin: 0auto;
+  border: 5px solid black;
+}
+
+h1, h2 {
+  color: #00539F;
+text-align: center;  
+
+  
+}
+
+p{
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+#form {
+  width:320px;
+  left:37%;
+  position: relative;
+  
+  top:29%;
+  
+  height:240px;
+  width:320px;
+}
+fieldset{
+  height:240px;
+}
+
+legend {
+  font-style: inherit;
+}
+
+#frm label{
+  position:absolute;
+  left:22px;
+  margin-right:8px;
+}
+
+#frm input
+{
+  position: relative;
+}
+
+.btnCadastro{
+  text-decoration: none;
+  border: none;
+  padding: 10px;
+  color: green;
+  text-align: center;
+}
+
+.lblPadrao{
+  color: #ffa500;
+}
+
+.btnOk{
+  text-decoration: none;
+  border: none;
+  padding: 10px;
+  color: green;
+  text-align: center;
+}
+
