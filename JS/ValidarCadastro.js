@@ -18,7 +18,8 @@
     {
         lblCampo.innerHTML='<span role="alert" class="erros">Erro: '+msgErro+'</span>';
     }
-    function CorrigirErros(lblCampo, msgPadrao)
+    
+function CorrigirErros(lblCampo, msgPadrao)
     {
         lblCampo.innerHTML='<span class="lblPadrao">* '+msgPadrao+'</span>';
     }
@@ -37,8 +38,7 @@
     var LabelSexo=document.getElementById("lblSexo");
     var dddFixo=document.getElementById("dddFixo").value;
     
-    var sexoF=document.getElementById("feminino");
-    var sexoM=document.getElementById("masculino");
+var sexo=document.getElementsByName("sexo");
     var labelCep=document.getElementById("lblCep");
     var Cep=document.getElementById("cep").value;
     var labelRua=document.getElementById("lblRua");
@@ -54,6 +54,7 @@
     var labelEstado=document.getElementById("lblEstado");
     var Estado=document.getElementById("estado");
     var labelDddFixo=document.getElementById("lbldddFixo");
+var dddFixo=document.getElementById("dddFixo").value;
     var labelTelFixo=document.getElementById("lblTelFixo");
     var TelFixo=document.getElementById("telFixo").value;
     var labeldddMovel=document.getElementById("lbldddMovel");
@@ -110,7 +111,7 @@
     }
     }
     
-    if(sexoF.checked=false || sexoM.checked==false)
+    if(sexo[0].checked!=true && sexo[1].checked!=true)
     {
         
         Erros(LabelSexo, lblErros[3]);
@@ -320,19 +321,17 @@
         statusRg=RG;
     }
     
-    if(sexoM.checked)
-    {
-        genero="masculino";
-    }
+    //recebendo Genero do usuario
+if(sexo[0].checked==true)
+{
+    genero="feminino";
+}
     else
-    {
-        genero="feminino";
-    }
+     {
+         genero="masculino";
+     }
     
-    
-    
-     
-    if(arrayError.length==0)
+     if(arrayError.length==0)
     {
         
         alert("Obrigado "+nome+", sua inscrição foi realizada com sucesso!");

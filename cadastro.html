@@ -12,17 +12,14 @@
 <body>
 <header>
 <h1>Inscrição de Cursos</h1>
-<p>Nesta tela vo^cê poderá se cadastrar nos cursos disponíveis no sistema</p>
-<p>Iremos cadastrar seus dados pessoais nas nossas bases de aluno</p>
+<p>Nesta tela você poderá se cadastrar nos cursos disponíveis no sistema</p>
+<p>Iremos cadastrar seus dados pessoais em nossas bases de aluno</p>
 </header>
 <main>
     <h2>Instruções de cadastro</h2>
     <p>Atenção: Os campos com * são Obrigatórios<br>
         Ao final do cadastro, você receberá uma confirmação com o resumo dos seus dados e o curso escolhido.</p>
-        
-
-        
-
+    
         <h2>Formulário de inscrição</h2>
         <div id="frm">
         <form id="frmCadastro">
@@ -39,11 +36,9 @@
 <br>
 <label id="lblSexo">Sexo</label>
 <br>
-<label for="feminino">feminino</label>
-<input type="radio" name="sexo" id="feminino" value="feminino">
+<input type="radio" name="sexo" value="feminino">Feminino
 <br>
-<label for="masculino">Masculino</label>
-<input type="radio" name="sexo" id="masculino" value="masculino">
+<input type="radio" name="sexo" value="masculino">Masculino
             </fieldset>
             <br>
             <fieldset>
@@ -53,7 +48,7 @@
     <input type="tel" id="cep" maxlength="8" size="8" placeholder="Digite o cep sem pontuações" required>
     <br>
     <label for="rua" id="lblRua">* Rua/Avenida</label>
-    <input type="text" id="rua" maxlength="70" size="70" required>
+    <input type="text" id="rua" maxlength="70" size="70" placeholder="Digite rua/aAvenida" required>
     <br>
     <label for="numero" id="lblNumero">* numero</label>
     <input type="tel" id="numero" maxlength="6" size="6" placeholder="Informe o numero dacasa ou apartamento" required>
@@ -62,17 +57,16 @@
         <input type="text" id="complemento" maxlength="30" size="30" placeholder="Informe seu complemento. casa 1 / apartamento 303 bloco C">
         <br>
         <label for="bairro" id="lblBairro">* Bairro</label>
-        <input type="text" id="bairro" maxlength="40" size="40" placeholder="Informe  seu bairro corretamente." required>
+        <input type="text" id="bairro" maxlength="40" size="40" placeholder="Informe  seu bairro" required>
         <br>
         <label for="cidade" id="lblCidade">* Cidade</label>
-        <input type="text" id="cidade" maxlength="20"
- size="20" required>        <label for="estado" id="lblEstado">* Selecione seu estado</label>
- <br>
-        
+        <input type="text" id="cidade" maxlength="40" size="40" placeholder="Digite sua Cidade"  required>        
+        <br>
+        <label for="estado" id="lblEstado">* Selecione seu estado</label>
 <select id="estado">
     <option value="">Selecione</option>
     <option  value = " AC " > Acre </option>
-    < option  value = " AL " > Alagoas </option>
+    <option value=" AL " > Alagoas </option>
         <option  value = " AP " >Amapá</ option >
     
     <option  value = " AM " > Amazonas </option>
@@ -119,19 +113,19 @@
     <option  value = " SE " > Sergipe </option>
     <option  value = " TO " > Tocantins </option>
     <option  value = " EX " > Estrangeiro </option>
-</ select >
+    </select>
 <br>
-<label for="dddFixo" id=lbldddFixo">* Informe o DDD da sua região</label>   
-<input type="tel" id="dddFixo" maxlength="2" size="2" placeholder="Código de área. 11, 21, 24..." required>
+<label for="dddFixo" id="lbldddFixo">*Informe o código de área do Telefone Fixo EX(11)</label>
+<input type="tel" id="dddFixo" maxlength="2" size="2" placeholder="digite o código de área" required>
 <br>
-<label for="telFixo" id="lblTelFixo">* Telefone residencial para contato</label>
-<input type="tel" id="telFixo" maxlength="8" size="8" required>
+<label for="telFixo" id="lblTelFixo">* Digite o número do telefone Fixo</label>
+<input type="tel" id="telFixo" maxlength="8" size="8" placeholder="digite o seu telefone Fixo" required>
 <br>
-<label for=dddMovel" id="lbldddMovel">* Informe o DDD da sua região</label>
-<input type="tel" id="dddMovel" maxlength="2" size="2" placeholder="Código de área da região onde você mora" required>
+<label for=dddMovel" id="lbldddMovel">* Informe o DDD da sua região EX(11)</label>
+<input type="tel" id="dddMovel" maxlength="2" size="2" placeholder="digite o código de área" required>
 <br>
 <label for="cel" id="lblCel">* Celular</label>
-<input type="tel" id="cel" maxlength="9" size="9"  required>
+<input type="tel" id="cel" maxlength="9" size="9" placeholder="digite o seu Celular" required>
 </fieldset>
 
 <fieldset>
@@ -153,7 +147,7 @@
         
          <span id="display"></span>
 </main>
-
+<br>
 <footer aria-label="rodapé">
     <h3>Formação DEV Brasil</h3>
 <p>AV. Faria Lima 77 SP BR<br>
